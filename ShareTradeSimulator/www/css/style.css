@@ -1,1 +1,13 @@
 /* Empty. Add your own CSS if you like */
+
+
+.video {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.newsimage {
+    float: left;
+    margin: 5px;
+}
