@@ -1,5 +1,74 @@
 <ion-view view-title="Watch List">
+
   <ion-content>
-    <h1>Watch List</h1>
+    <div style="float:left;" class="padding"><h4>Search, add, buy and remove</h4></div>
+
+    <div style="float:right;">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="Search">
+      </label>
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <ion-list>
+      <ion-item menu-close href="#">
+        <div class="stockitem">
+          <b>NAB</b> 32.47
+          <div style="float:right;">
+            <button class="button button-small button-balanced">
+              Buy
+            </button>
+            <button class="button button-small button-assertive">
+              Remove
+            </button>
+          </div>
+        </div>
+      </ion-item>
+
+      <ion-item menu-close href="#">
+        <div class="stockitem">
+          <b>ANZ</b> 31.67
+          <div style="float:right;">
+            <button class="button button-small button-balanced">
+              Buy
+            </button>
+            <button class="button button-small button-assertive">
+              Remove
+            </button>
+          </div>
+        </div>
+      </ion-item>
+
+      <ion-item menu-close href="#">
+        <div class="stockitem">
+          <b>TLS</b> 6.02
+          <div style="float:right;">
+            <button class="button button-small button-balanced">
+              Buy
+            </button>
+            <button class="button button-small button-assertive">
+              Remove
+            </button>
+          </div>
+        </div>
+      </ion-item>
+
+      <ion-item menu-close href="#">
+        <div class="stockitem">
+          <b>WOW</b> 27.00
+          <div style="float:right;">
+            <button class="button button-small button-balanced">
+              Buy
+            </button>
+            <button class="button button-small button-assertive">
+              Remove
+            </button>
+          </div>
+        </div>
+      </ion-item>
+
+    </ion-list>
   </ion-content>
 </ion-view>

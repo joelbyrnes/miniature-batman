@@ -14,7 +14,7 @@ angular.module('starter.controllers', [])
 
   $scope.stocks = [
     {
-      name: 'Suncorp',
+      name: 'SUN (Suncorp Group Limited)',
       visible: true,
       img: 'img/sun-chart2.png'
     }, 
