@@ -12,6 +12,52 @@ angular.module('starter.controllers', [])
   // Form data for the login modal
   $scope.loginData = {};
 
+  $scope.stocks = [
+    {
+      name: 'Suncorp',
+      visible: true,
+      img: 'img/sun-chart2.png'
+    }, 
+    {
+      name: 'BHP (BHP Billiton Limited)',
+      visible: false,
+      img: 'img/stock-BHP.png'
+    }, 
+    {
+      name: 'CBA (Commonwealth Bank of Australia)',
+      visible: false,
+      img: 'img/stock-CBA.png'
+    }, 
+    {
+      name: 'NHC (New Hope Corporation Limited)',
+      visible: false,
+      img: 'img/stock-NHC.png'
+    }, 
+    {
+      name: 'QAN (Qantas Airways Limited)',
+      visible: false,
+      img: 'img/stock-QAN.png'
+    }, 
+    {
+      name: 'RIO (Rio Tinto Limited)',
+      visible: false,
+      img: 'img/stock-RIO.png'
+    }, 
+    {
+      name: 'VAH (Virgin Australia Holdings Ltd)',
+      visible: false,
+      img: 'img/stock-VAN.png'
+    }
+  ];
+
+  $scope.clickStock = function(stock) {
+      for (var i = 0; i < $scope.stocks.length; i++) {
+        $scope.stocks[i].visible = false;
+      }
+
+      stock.visible = true;
+  };
+
   // Create the login modal that we will use later
   $ionicModal.fromTemplateUrl('templates/login.html', {
     scope: $scope
@@ -39,6 +85,7 @@ angular.module('starter.controllers', [])
       $scope.closeLogin();
     }, 1000);
   };
+
 })
 
 .controller('HomeCtrl', function($scope) {

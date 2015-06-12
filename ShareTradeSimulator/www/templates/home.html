@@ -1,16 +1,18 @@
 <ion-view view-title="Home">
   <ion-content>
-    <div style="float:left;"><h3>My Stocks</h3></div><div style="float:right;">Search</div>
-    <div style="clear: both"></div>
+  <h3>My Stocks</h3>
+  
+  <div class="list card">
+    <div ng-repeat="stock in stocks">
+      <div class="item item-avatar" style="background-color:#f4f7f8; border:#ddd 1px solid" ng-click="clickStock(stock)">
+        {{stock.name}}
+      </div>
 
-    <ion-list>
-      <ion-item menu-close href="#">
-        <h2>SUN</h2> 1000 units $1200 TODO expand chart
-      </ion-item>
-    </ion-list>
-
-    <img src="img/sun-chart2.png"/>
-
+      <div class="item item-image" ng-show="stock.visible">
+        <img ng-src="{{stock.img}}">
+      </div>
+    </div>
+  </div>
 
   </ion-content>
 </ion-view>
