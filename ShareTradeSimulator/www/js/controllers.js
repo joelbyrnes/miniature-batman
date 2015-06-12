@@ -16,7 +16,7 @@ angular.module('starter.controllers', [])
     {
       name: 'SUN (Suncorp Group Limited)',
       visible: true,
-      img: 'img/sun-chart2.png'
+      img: 'img/sun-chart2.PNG'
     }, 
     {
       name: 'BHP (BHP Billiton Limited)',
